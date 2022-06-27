@@ -1,0 +1,50 @@
+
+.background__table{
+    overflow-x:auto;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+
+nav{
+    background-color: #232946;
+}
+.btn1{
+    background-color:  var(--color-white);
+    color: var(--color-bg);
+    transition: var(--transition);
+    margin-right: 10px;
+ }
+ 
+ .btn1:hover{
+     background-color: #d4939d;
+     color: white;
+     border-color: transparent;
+ }
+ 
+/* ======media queries for tablets(medium devices) =========*/
+
+@media screen and (max-width: 1024px) {
+    .background__table{
+        width:100%;
+    }
+    .hide { display: none; }
+  
+  }
+  
+  /* ======media queries for mobile(small devices) =========*/
+  
+  @media screen and (max-width: 600px) {
+    .wrapper{
+        width: var(--container-width-sm);
+    }
+    .hide { display: none; }
+    h1{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+  }

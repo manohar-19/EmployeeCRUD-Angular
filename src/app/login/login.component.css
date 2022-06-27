@@ -1,0 +1,87 @@
+/* .background__img {  
+   
+    background-color: #232946;
+    height: 100vh;
+    overflow: hidden;
+} */
+.background{
+    background-color: #232946;
+}
+
+.wrapper {
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.2rem;
+    box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.text{
+    text-align: center;
+    color: #232946;
+}
+
+.form-label{
+    font-weight: 500;
+}
+.or {
+    text-align: center;
+}
+.links{
+    text-align: center;
+    display:block;
+   
+    color: var(--color-bg);
+}
+.links:hover{
+    cursor: pointer;
+}
+
+.form-label{
+    color: #232946;
+}
+
+.btn1{
+   background-color:  var(--color-bg);
+   color: var(--color-white);
+   transition: var(--transition);
+}
+
+.btn1:hover{
+    background-color: var(--color-white);
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+
+/* ======media queries for tablets(medium devices) =========*/
+
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        width: var(--container-width-md);
+        top: 15%;
+        
+    }
+  }
+  
+  /* ======media queries for mobile(small devices) =========*/
+  
+  @media screen and (max-width: 600px) {
+    .wrapper{
+        width: var(--container-width-sm);
+        line-height: 0.8rem;
+    }
+    label{
+        font-size: 0.9rem;
+    }
+    #emailHelp{
+        font-size: 0.7rem;
+    }
+  }
